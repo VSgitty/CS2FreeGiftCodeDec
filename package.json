@@ -1,0 +1,19 @@
+{
+  "name": "giftdectector",
+  "version": "1.0.0",
+  "description": "Aggregiert Free-Code-Posts (CS skins) aus Social-Seiten und weiteren Quellen in einem Dashboard.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "scan": "node src/scan-once.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "playwright": "^1.52.0",
+    "rss-parser": "^3.13.0"
+  }
+}

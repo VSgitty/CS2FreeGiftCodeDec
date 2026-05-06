@@ -1,0 +1,185 @@
+{
+  "updatedAt": "2026-05-06T10:13:27.622Z",
+  "providers": [
+    {
+      "id": "provider_jedinews_com",
+      "name": "jedinews.com",
+      "host": "jedinews.com",
+      "url": "https://jedinews.com",
+      "score": 7,
+      "firstSeenAt": "2026-05-06T10:11:02.148Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_skinrave_gg",
+      "name": "skinrave.gg",
+      "host": "skinrave.gg",
+      "url": "https://skinrave.gg",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_csgamer_net",
+      "name": "csgamer.net",
+      "host": "csgamer.net",
+      "url": "https://csgamer.net",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_geekvibesnation_com",
+      "name": "geekvibesnation.com",
+      "host": "geekvibesnation.com",
+      "url": "https://geekvibesnation.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_tutbonus_com",
+      "name": "tutbonus.com",
+      "host": "tutbonus.com",
+      "url": "https://tutbonus.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_bonusskins_com",
+      "name": "bonusskins.com",
+      "host": "bonusskins.com",
+      "url": "https://bonusskins.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_tutpom_com",
+      "name": "tutpom.com",
+      "host": "tutpom.com",
+      "url": "https://tutpom.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_egamersworld_com",
+      "name": "egamersworld.com",
+      "host": "egamersworld.com",
+      "url": "https://egamersworld.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:10:19.203Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_csgotab_com",
+      "name": "csgotab.com",
+      "host": "csgotab.com",
+      "url": "https://csgotab.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:10:19.203Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_keysarena_com",
+      "name": "keysarena.com",
+      "host": "keysarena.com",
+      "url": "https://keysarena.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:10:19.203Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_csgobettings_com",
+      "name": "csgobettings.com",
+      "host": "csgobettings.com",
+      "url": "https://csgobettings.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:11:02.148Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_cs2key_club",
+      "name": "cs2key.club",
+      "host": "cs2key.club",
+      "url": "https://cs2key.club",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:11:02.148Z",
+      "lastSeenAt": "2026-05-06T10:11:02.148Z"
+    },
+    {
+      "id": "provider_skinlords_com",
+      "name": "skinlords.com",
+      "host": "skinlords.com",
+      "url": "https://skinlords.com",
+      "score": 6,
+      "firstSeenAt": "2026-05-06T10:12:26.811Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_gocsgo_com",
+      "name": "gocsgo.com",
+      "host": "gocsgo.com",
+      "url": "https://gocsgo.com",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_jaxon_gg",
+      "name": "jaxon.gg",
+      "host": "jaxon.gg",
+      "url": "https://jaxon.gg",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_cs2code24_com",
+      "name": "cs2code24.com",
+      "host": "cs2code24.com",
+      "url": "https://cs2code24.com",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_cs2claim_com",
+      "name": "cs2claim.com",
+      "host": "cs2claim.com",
+      "url": "https://cs2claim.com",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_cs2_gambling_gg",
+      "name": "cs2-gambling.gg",
+      "host": "cs2-gambling.gg",
+      "url": "https://cs2-gambling.gg",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:09:37.359Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_caseopening_eu_com",
+      "name": "caseopening.eu.com",
+      "host": "caseopening.eu.com",
+      "url": "https://caseopening.eu.com",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:10:19.203Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    },
+    {
+      "id": "provider_cs2code_com",
+      "name": "cs2code.com",
+      "host": "cs2code.com",
+      "url": "https://cs2code.com",
+      "score": 5,
+      "firstSeenAt": "2026-05-06T10:10:19.203Z",
+      "lastSeenAt": "2026-05-06T10:13:27.622Z"
+    }
+  ]
+}

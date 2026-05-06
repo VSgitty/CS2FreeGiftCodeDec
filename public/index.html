@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiftDectector - Free Codes Monitor</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">CS Skin Monitor</p>
+          <h1>Neue Free Codes auf einen Blick</h1>
+          <p class="subtitle">
+            Ein Feed fur Instagram, Facebook und weitere Quellen. Kein manuelles
+            Durchklicken mehr.
+          </p>
+        </div>
+        <div class="actions">
+          <button id="scanBtn">Jetzt neu scannen</button>
+          <label class="toggle">
+            <input id="onlyCodes" type="checkbox" />
+            Nur Eintrage mit erkanntem Code
+          </label>
+        </div>
+      </header>
+
+      <section class="stats" id="stats"></section>
+
+      <section class="toolbar">
+        <input id="search" type="search" placeholder="Filter nach code, quelle, text" />
+      </section>
+
+      <section id="items" class="grid"></section>
+    </main>
+
+    <template id="itemTpl">
+      <article class="card">
+        <div class="metaRow">
+          <span class="source"></span>
+          <span class="date"></span>
+        </div>
+        <h3 class="title"></h3>
+        <p class="text"></p>
+        <div class="codes"></div>
+        <a class="link" target="_blank" rel="noopener noreferrer">Zum Post</a>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
