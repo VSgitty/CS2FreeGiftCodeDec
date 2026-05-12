@@ -8,6 +8,7 @@ import { extractCodes } from "./utils/extract-codes.js";
 import { compactText, hasKeyword } from "./utils/text.js";
 import { scrapeInstagramProfile } from "./sources/instagram-source.js";
 import { scrapeFacebookPage } from "./sources/facebook-source.js";
+import { scrapeTwitterProfile } from "./sources/x-source.js";
 import { scrapeRss } from "./sources/rss-source.js";
 import { scrapeWebSearch } from "./sources/web-search-source.js";
 import { scrapeProviderPage } from "./sources/provider-source.js";
@@ -20,6 +21,8 @@ async function scrapeSource(source) {
       return scrapeInstagramProfile(source);
     case "facebook_page":
       return scrapeFacebookPage(source);
+    case "x_profile":
+      return scrapeTwitterProfile(source);
     case "rss":
       return scrapeRss(source);
     case "web_search":

@@ -1,12 +1,20 @@
 import express from "express";
 import cron from "node-cron";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 import { SERVER_PORT, SCAN_CRON } from "./config.js";
 import { loadDb } from "./storage.js";
 import { runScan } from "./scanner.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const publicPath = join(__dirname, "../public");
+
+console.log("Serving static files from:", publicPath);
+
 const app = express();
 app.use(express.json());
-app.use(express.static(new URL("../public", import.meta.url).pathname));
+app.use(express.static(publicPath));
 
 app.get("/api/items", async (req, res) => {
   const db = await loadDb();

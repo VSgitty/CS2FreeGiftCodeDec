@@ -5,6 +5,7 @@ export const MAX_DISCOVERED_PROVIDERS = 20;
 export const MAX_PROVIDERS_SCANNED_PER_RUN = 10;
 
 export const SOURCES = [
+  // Instagram-Quellen
   {
     id: "instagram_csgoskins_official",
     type: "instagram_profile",
@@ -12,11 +13,32 @@ export const SOURCES = [
     url: "https://www.instagram.com/csgoskins_official/"
   },
   {
+    id: "instagram_csgocasescom",
+    type: "instagram_profile",
+    name: "Instagram: csgocasescom",
+    url: "https://www.instagram.com/csgocasescom/"
+  },
+  // Facebook-Quellen
+  {
     id: "facebook_csgoskinscom",
     type: "facebook_page",
     name: "Facebook: csgoskinscom",
     url: "https://www.facebook.com/csgoskinscom"
   },
+  {
+    id: "facebook_csgocasescom",
+    type: "facebook_page",
+    name: "Facebook: csgocasescom",
+    url: "https://www.facebook.com/csgocasescom/"
+  },
+  // Twitter/X-Quellen
+  {
+    id: "x_csgocasescom",
+    type: "x_profile",
+    name: "Twitter/X: csgocasescom",
+    url: "https://x.com/csgocasescom"
+  },
+  // Web-Suchen
   {
     id: "duckduckgo_free_skin_codes",
     type: "web_search",
@@ -39,6 +61,7 @@ export const SOURCES = [
       "cs2 promo code deposit bonus"
     ]
   },
+  // RSS-Quellen
   {
     id: "reddit_globaloffensive_trade",
     type: "rss",

@@ -13,15 +13,15 @@
           <p class="eyebrow">CS Skin Monitor</p>
           <h1>Neue Free Codes auf einen Blick</h1>
           <p class="subtitle">
-            Ein Feed fur Instagram, Facebook und weitere Quellen. Kein manuelles
-            Durchklicken mehr.
+            Erfasst automatisch Free-Code-Posts von Instagram, Facebook, Twitter/X und weiteren Quellen.
+            Keine manuellen Durchklicks mehr.
           </p>
         </div>
         <div class="actions">
-          <button id="scanBtn">Jetzt neu scannen</button>
+          <button id="scanBtn" class="btn-primary">Jetzt neu scannen</button>
           <label class="toggle">
             <input id="onlyCodes" type="checkbox" />
-            Nur Eintrage mit erkanntem Code
+            Nur Einträge mit erkanntem Code
           </label>
         </div>
       </header>
@@ -29,22 +29,42 @@
       <section class="stats" id="stats"></section>
 
       <section class="toolbar">
-        <input id="search" type="search" placeholder="Filter nach code, quelle, text" />
+        <input id="search" type="search" placeholder="Nach Code, Quelle, Text filtern..." />
+        <div class="filter-group">
+          <label>
+            <input type="checkbox" class="source-filter" data-source="instagram" checked />
+            Instagram
+          </label>
+          <label>
+            <input type="checkbox" class="source-filter" data-source="facebook" checked />
+            Facebook
+          </label>
+          <label>
+            <input type="checkbox" class="source-filter" data-source="twitter" checked />
+            Twitter/X
+          </label>
+        </div>
       </section>
 
       <section id="items" class="grid"></section>
+      
+      <div id="noItems" class="no-items" style="display: none;">
+        <p>Keine Posts gefunden</p>
+      </div>
     </main>
 
     <template id="itemTpl">
       <article class="card">
         <div class="metaRow">
-          <span class="source"></span>
+          <span class="source-badge"></span>
           <span class="date"></span>
         </div>
         <h3 class="title"></h3>
         <p class="text"></p>
-        <div class="codes"></div>
-        <a class="link" target="_blank" rel="noopener noreferrer">Zum Post</a>
+        <div class="codes-container">
+          <div class="codes"></div>
+        </div>
+        <a class="link" target="_blank" rel="noopener noreferrer">Zum Post →</a>
       </article>
     </template>
 
