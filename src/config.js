@@ -72,11 +72,32 @@ export const SOURCES = [
 
 export const KEYWORDS = [
   "free code",
-  "promo code",
-  "skin",
-  "bonus code",
+  "freecode",
+  "código gratis",
+  "code gratuit"
+];
+
+// Strikte Keywords - müssen für relevante Posts vorhanden sein
+export const STRICT_KEYWORDS = ["free code", "freecode"];
+
+// Unwanted Keywords - diese Posts ausschließen
+export const EXCLUDED_KEYWORDS = [
+  "contest",
   "giveaway",
-  "free case",
-  "cs2",
-  "csgo"
+  "give away",
+  "gewinnspiel",
+  "concurso",
+  "match",
+  "tournament",
+  "turnier",
+  "event",
+  "live stream",
+  "stream",
+  "deal",
+  "sale",
+  "rabatt",
+  "discount",
+  "promotion",
+  "promo",
+  "sponsored"
 ];

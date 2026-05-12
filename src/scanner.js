@@ -1,5 +1,7 @@
 import {
   KEYWORDS,
+  STRICT_KEYWORDS,
+  EXCLUDED_KEYWORDS,
   MAX_DISCOVERED_PROVIDERS,
   MAX_PROVIDERS_SCANNED_PER_RUN,
   SOURCES
@@ -34,8 +36,27 @@ async function scrapeSource(source) {
 
 function normalizeItem(source, raw) {
   const mergedText = compactText(`${raw.title || ""} ${raw.text || ""}`);
+  const mergedTextLower = mergedText.toLowerCase();
   const detectedCodes = extractCodes(mergedText);
-  const keep = detectedCodes.length > 0 || hasKeyword(mergedText, KEYWORDS);
+
+  // STRIKTE FILTERUNG für Social Media Posts:
+  // 1. MUSS Codes enthalten
+  const hasCodes = detectedCodes.length > 0;
+  
+  // 2. DARF KEINE unerwünschten Keywords haben
+  const hasExcluded = hasKeyword(mergedTextLower, EXCLUDED_KEYWORDS);
+  
+  // 3. SOLLTE "free" oder "code" oder Ähnliches haben
+  const hasFreeCodeIndication = 
+    mergedTextLower.includes("free") || 
+    mergedTextLower.includes("code") ||
+    mergedTextLower.includes("promo") ||
+    mergedTextLower.includes("bonus") ||
+    mergedTextLower.includes("kostenlos") ||
+    mergedTextLower.includes("gratuit");
+
+  // keep = (Hat Codes) UND (Keine unerwünschten Keywords) UND (Hat FREE/CODE/PROMO/BONUS Hinweis)
+  const keep = hasCodes && !hasExcluded && hasFreeCodeIndication;
 
   if (!keep) {
     return null;

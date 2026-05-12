@@ -8,7 +8,7 @@ const scanBtn = document.querySelector("#scanBtn");
 const sourceFilterEls = document.querySelectorAll(".source-filter");
 
 let allItems = [];
-let activeSourceFilters = new Set(["instagram", "facebook", "twitter"]);
+let activeSourceFilters = new Set(["instagram", "facebook", "twitter", "web"]);
 
 function getSourceType(sourceName) {
   const lower = sourceName.toLowerCase();
